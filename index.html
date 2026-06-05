@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHRONOS — Precision Timepieces</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="cur"></div>
+  <div id="cur2"></div>
+
+  <nav id="nav">
+    <div class="nav-logo">CHRONOS</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Collection</a></li>
+      <li><a href="#explode-section">Manufacture</a></li>
+      <li><a href="#specs">Specifications</a></li>
+      <li><a href="#acquire">Acquire</a></li>
+    </ul>
+    <a href="#acquire" class="nav-cta">Reserve →</a>
+  </nav>
+
+  <section id="hero">
+    <canvas id="watch-canvas"></canvas>
+    <div class="hero-copy">
+      <p class="eyebrow" data-aos>Genève · Est. 1847 · In-House Manufacture</p>
+      <h1 data-aos data-aos-delay="100">Time<br><em>Perfected</em></h1>
+      <p class="hero-sub" data-aos data-aos-delay="200">
+        The Chronos Perpetual I — 312 hand-assembled components,<br>
+        72 hours power reserve. One of 500.
+      </p>
+      <div class="hero-btns" data-aos data-aos-delay="300">
+        <a href="#explode-section" class="btn-gold">Discover the Movement</a>
+        <a href="#acquire" class="btn-outline">CHF 28,500</a>
+      </div>
+    </div>
+
+    <div class="spec-tag tag-a" data-aos data-aos-delay="600">
+      <div class="st-dot"></div>
+      <div class="st-line"></div>
+      <div class="st-body">
+        <span class="st-name">Calibre CH-01</span>
+        <span class="st-val">In-house movement</span>
+      </div>
+    </div>
+    <div class="spec-tag tag-b" data-aos data-aos-delay="700">
+      <div class="st-body right">
+        <span class="st-name">Sapphire Crystal</span>
+        <span class="st-val">AR-coated · 4.2 mm</span>
+      </div>
+      <div class="st-line"></div>
+      <div class="st-dot"></div>
+    </div>
+    <div class="spec-tag tag-c" data-aos data-aos-delay="800">
+      <div class="st-dot"></div>
+      <div class="st-line"></div>
+      <div class="st-body">
+        <span class="st-name">316L Steel</span>
+        <span class="st-val">72 h hand-polished</span>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span class="sh-bar"></span>
+      <span class="sh-txt">Scroll</span>
+    </div>
+  </section>
+
+  <section id="explode-section">
+    <div class="explode-sticky" id="explode-sticky">
+      <canvas id="explode-canvas"></canvas>
+      <div class="explode-sidebar" id="explode-sidebar">
+        <p class="eyebrow">The Art of</p>
+        <h2>Decon&shy;struction</h2>
+        <p>Every component of the Calibre CH-01 is individually finished to Geneva Stripes standard before assembly. Witness 312 parts that form a single heartbeat.</p>
+        <div class="explode-stats">
+          <div class="es-item">
+            <span class="es-num" id="cnt-parts">0</span>
+            <span class="es-lbl">Components</span>
+          </div>
+          <div class="es-item">
+            <span class="es-num" id="cnt-hours">0</span>
+            <span class="es-lbl">Assembly hours</span>
+          </div>
+          <div class="es-item">
+            <span class="es-num" id="cnt-jewels">0</span>
+            <span class="es-lbl">Jewels</span>
+          </div>
+        </div>
+      </div>
+      <div class="part-label pl-1" id="pl-movement">Calibre CH-01<br><small>312 components · 36 jewels</small></div>
+      <div class="part-label pl-2" id="pl-dial">Sunburst Dial<br><small>Lacquered · hand-applied indices</small></div>
+      <div class="part-label pl-3" id="pl-crystal">Sapphire Crystal<br><small>Double-dome · AR both sides</small></div>
+      <div class="part-label pl-4" id="pl-case">316L Steel Case<br><small>41 mm · 10.8 mm thick</small></div>
+    </div>
+  </section>
+
+  <section id="specs">
+    <div class="specs-inner">
+      <div class="specs-head">
+        <div>
+          <p class="eyebrow">Technical</p>
+          <h2>Excellence<br><em>in Motion</em></h2>
+        </div>
+        <div class="specs-ref">CH — 01</div>
+      </div>
+      <div class="specs-grid">
+        <div class="sc" data-aos><div class="sc-n">72<sup>h</sup></div><div class="sc-k">Power Reserve</div><div class="sc-v">Single-barrel mainspring, click security system</div><div class="sc-bar"><div class="sc-fill" style="--p:85%"></div></div></div>
+        <div class="sc" data-aos data-aos-delay="60"><div class="sc-n">28,800<sup>vph</sup></div><div class="sc-k">Frequency</div><div class="sc-v">4 Hz · 8 beats per second · lever escapement</div><div class="sc-bar"><div class="sc-fill" style="--p:70%"></div></div></div>
+        <div class="sc" data-aos data-aos-delay="120"><div class="sc-n">312</div><div class="sc-k">Components</div><div class="sc-v">Hand-assembled, each individually inspected</div><div class="sc-bar"><div class="sc-fill" style="--p:100%"></div></div></div>
+        <div class="sc" data-aos data-aos-delay="180"><div class="sc-n">100<sup>m</sup></div><div class="sc-k">Water Resistance</div><div class="sc-v">Screw-down crown · triple O-ring gasket</div><div class="sc-bar"><div class="sc-fill" style="--p:60%"></div></div></div>
+        <div class="sc" data-aos data-aos-delay="240"><div class="sc-n">41<sup>mm</sup></div><div class="sc-k">Case Diameter</div><div class="sc-v">316L brushed and polished · 10.8 mm thick</div><div class="sc-bar"><div class="sc-fill" style="--p:55%"></div></div></div>
+        <div class="sc" data-aos data-aos-delay="300"><div class="sc-n">36</div><div class="sc-k">Jewels</div><div class="sc-v">Synthetic ruby bearings · near-zero friction</div><div class="sc-bar"><div class="sc-fill" style="--p:45%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="materials">
+    <div class="mat-inner">
+      <p class="eyebrow">Crafted From</p>
+      <h2>The <em>Finest</em> Materials</h2>
+      <div class="mat-grid">
+        <div class="mat-card" data-aos>
+          <div class="mat-num">01</div>
+          <h3>316L Stainless Steel</h3>
+          <p>Medical-grade austenitic steel machined from a solid billet. Corrosion-resistant, hypoallergenic, and hand-polished over 72 hours.</p>
+          <div class="mat-specs"><span>Hardness: 200 HV</span><span>Finish: Mirror + Satin</span></div>
+        </div>
+        <div class="mat-card" data-aos data-aos-delay="80">
+          <div class="mat-num">02</div>
+          <h3>Sapphire Crystal</h3>
+          <p>Synthetic corundum at Mohs 9 hardness. Double-domed with multi-layer AR coating on both surfaces for near-perfect clarity at all angles.</p>
+          <div class="mat-specs"><span>Mohs: 9.0</span><span>Thickness: 4.2 mm</span></div>
+        </div>
+        <div class="mat-card" data-aos data-aos-delay="160">
+          <div class="mat-num">03</div>
+          <h3>Mississippi Alligator</h3>
+          <p>Hand-selected Louisiana alligator skin, sewn in Milan over 6 hours per strap. A unique patina develops with each owner's wear.</p>
+          <div class="mat-specs"><span>Origin: Louisiana, USA</span><span>Stitch: Silk thread</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="acquire">
+    <div class="acq-inner">
+      <div class="acq-left" data-aos>
+        <p class="eyebrow">Limited · 500 Pieces Worldwide</p>
+        <h2>Own<br><em>Eternity</em></h2>
+        <p>Each Chronos Perpetual I arrives with a certificate of authenticity, five-year manufacture warranty, and complimentary service at year three.</p>
+        <div class="acq-price">
+          <span class="acq-from">Starting at</span>
+          <span class="acq-val">CHF 28,500</span>
+        </div>
+        <div class="acq-btns">
+          <a href="#" class="btn-gold large">Reserve Your Piece</a>
+          <a href="#" class="btn-outline large">Download Catalogue</a>
+        </div>
+        <p class="acq-note">By appointment · Geneva Boutique · +41 22 000 0000</p>
+      </div>
+      <div class="acq-right" data-aos data-aos-delay="150">
+        <canvas id="acq-canvas"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="ft-top">
+      <div class="ft-logo">CHRONOS</div>
+      <div class="ft-cols">
+        <div class="ft-col"><h5>Collection</h5><a href="#">Perpetual I</a><a href="#">Tourbillon</a><a href="#">Complications</a></div>
+        <div class="ft-col"><h5>Manufacture</h5><a href="#">Our Story</a><a href="#">The Atelier</a><a href="#">Restoration</a></div>
+        <div class="ft-col"><h5>Contact</h5><a href="#">Boutiques</a><a href="#">Press</a><a href="#">Careers</a></div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2026 Chronos Manufacture SA · Genève</span>
+      <span>Swiss Made · In-house movement · Since 1847</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
